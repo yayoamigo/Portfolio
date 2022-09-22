@@ -1,17 +1,17 @@
+body{
+  margin: 0;
+}
 .container {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  width: 22.2%;
   height: 85vh;
 }
 
-.top-icons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  margin-left: 21px;
-  margin-right: 19px;
+.logo {
+  font-family: 'Poppins', 'Times New Roman', Times, serif; 
+  font-weight: 700; 
+  color: #6070ff;  
 }
 
 .mylogo {
@@ -26,22 +26,22 @@
   background-image: url(background.png);
   background-size: auto;
   background-repeat: no-repeat;
-  height: 80vh;
-  margin-top: 20px;
+  height: 100vh;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
-  margin-top: 36px;
-  margin-left: 24px;
-  margin-right: 80px;
+  margin-top: 20px;
+  margin-left: 10px;
   min-width: 90%;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  margin-top: 36px;
+  min-width: 90%;
 }
 
 #title {
@@ -65,7 +65,7 @@
   color: #344563;
   flex-grow: 0;
   margin-top: -20px;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
 }
 
 #connect {
@@ -78,7 +78,18 @@
   flex-grow: 0;
 }
 
-.bottom-icons {
+.bottom-icons ul{
+  list-style: none;
   display: flex;
-  margin-left: 24px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 16px;
+}
+
+.bottom-icons li{
+  padding: 5px;
+}
+
+.bottom-icons img{
+  height: 20px;
 }
