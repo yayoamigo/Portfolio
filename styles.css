@@ -1,6 +1,7 @@
-body{
+body {
   margin: 0;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,9 +10,9 @@ body{
 }
 
 .logo {
-  font-family: 'Poppins', 'Times New Roman', Times, serif; 
-  font-weight: 700; 
-  color: #6070ff;  
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: #6070ff; 
 }
 
 .mylogo {
@@ -78,7 +79,7 @@ body{
   flex-grow: 0;
 }
 
-.bottom-icons ul{
+.bottom-icons ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -86,10 +87,10 @@ body{
   margin-left: 16px;
 }
 
-.bottom-icons li{
+.bottom-icons li {
   padding: 5px;
 }
 
-.bottom-icons img{
+.bottom-icons img {
   height: 20px;
 }
