@@ -6,7 +6,7 @@
   border-width: 1px;
   background-color: #fff;
   width: 22.2%;
-  height: 85vh;  
+  height: 85vh;
 }
 
 .top-icons {
@@ -41,18 +41,17 @@
   flex-direction: column;
   margin-top: 36px;
   margin-left: 24px;
-  margin-right: 0px;
   margin-right: 80px;
   min-width: 90%;
 }
 
 .header {
   display: flex;
-  flex-direction : column;
+  flex-direction: column;
 }
 
 #title {
-  font-family: 'Poppins','Times';
+  font-family: 'Poppins', Times;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -64,7 +63,7 @@
 }
 
 #paragraph {
-  font-family: 'Poppins','Times';
+  font-family: 'Poppins', Times;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -76,7 +75,7 @@
 }
 
 #connect {
-  font-family: 'Poppins','Times';
+  font-family: 'Poppins', Times;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
