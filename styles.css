@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 85vh;
+}
+
+a:link { text-decoration: none; }
+
+.logo {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: #6070ff;
+}
+
+.Mylogo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 21px;
+  margin-right: 36px;
+  padding-top: 30px;
+}
+
+.Hambu-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.img {
+  background-image: url(background.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+  min-width: 90%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  min-width: 90%;
+}
+
+#title {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  flex-grow: 0;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+
+#paragraph {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex-grow: 0;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+#connect {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex-grow: 0;
+}
+
+.bottom-icons ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 16px;
+}
+
+.bottom-icons li {
+  padding: 5px;
+}
+
+.bottom-icons img {
+  height: 20px;
+}
