@@ -4,6 +4,16 @@ In this proyect I will be creating the frist part  for the mobile version of my 
 ## Built With
 - HTML
 - CSS
+# Get Started
+
+To get a local copy up and running follow these simple steps.
+
+```bash
+
+$ https://github.com/yayoamigo/mobile-template
+$ cd mobile-template
+
+```
 
 ## Authors
 
@@ -29,5 +39,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is not lincesed
 
