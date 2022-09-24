@@ -1,5 +1,5 @@
 # Mobile-Template
-In this proyect I will be creating the frist part  for the mobile version of my personal portfolio 
+In this proyect I will be creating the frist and middle part  for the mobile version of my personal portfolio 
 
 ## Built With
 - HTML
