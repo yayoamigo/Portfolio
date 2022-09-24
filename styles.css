@@ -138,7 +138,6 @@ a:link { text-decoration: none; }
   border-radius: 16px;
 }
 
-
 .tonic-title {
   display: flex;
   justify-content: end;
@@ -147,7 +146,7 @@ a:link { text-decoration: none; }
 
 h2 {
   width: 295px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -167,7 +166,7 @@ h2 {
   margin-left: 14px;
   padding-left: 7px;
   padding-right: 80px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -183,7 +182,7 @@ h2 {
 }
 
 .project-p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -211,18 +210,18 @@ h2 {
 }
 
 .skills li {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   padding: 4px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-style: solid;
   border-width: 1px;
-  border-color: #6070FF;
+  border-color: #6070ff;
   border-radius: 8px;
 }
 
@@ -239,26 +238,26 @@ h2 {
   padding: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color: #6070ff; 
+  border-color: #6070ff;
   border-radius: 8px;
-  background: #FFFFFF;
+  background: #fff;
 }
 
 .project-btn {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396DF2;
-  background: #FFFFFF;
+  color: #396df2;
+  background: #fff;
 }
 
 .see-project :hover {
   cursor: pointer;
 }
 
-.resume{
+.resume {
   display: flex;
   justify-content: start;
   width: 100%;
@@ -271,9 +270,9 @@ h2 {
   padding: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color: #6070ff; 
+  border-color: #6070ff;
   border-radius: 8px;
-  background: #FFFFFF;
+  background: #fff;
 }
 
 .resume-btn :hover {
@@ -281,12 +280,12 @@ h2 {
 }
 
 .get-btn {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396DF2;
+  color: #396df2;
   background: #fff;
 }
 
@@ -302,13 +301,13 @@ h2 {
   margin-top: 114px;
   width: 380px;
   height: 101px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   padding-left: 24px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 #paragraph2 {
@@ -344,8 +343,8 @@ h2 {
   margin-right: 20px;
 }
 
-.arrows *{
-  font-family: 'Poppins';
+.arrows * {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -365,7 +364,7 @@ h2 {
 .languages-content {
   display: flex;
   flex-direction: row;
-  background: #F7F7F9;
+  background: #f7f7f9;
   padding: 10px;
   border-radius: 8px;
   margin-right: 15px;
@@ -374,7 +373,7 @@ h2 {
 }
 
 .languages-content p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -382,7 +381,7 @@ h2 {
   padding-left: 20px;
 }
 
-.arrows img{
+.arrows img {
   width: 14px;
   height: 12px;
   left: 5px;
@@ -390,11 +389,10 @@ h2 {
 }
 
 #arrow-box {
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
   margin-top: -40px;
 }
 
 #arrow-top {
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
 }
-
