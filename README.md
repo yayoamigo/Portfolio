@@ -39,5 +39,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is not lincesed
+This project is MIT licensed.
 
