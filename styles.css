@@ -144,7 +144,7 @@ a:link { text-decoration: none; }
   margin-left: -24px;
 }
 
-h2 {
+.tonic-title h2 {
   width: 295px;
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
@@ -392,4 +392,110 @@ h2 {
 
 #arrow-top {
   border-bottom: 1px solid #dfe1e6;
+}
+
+#footer {
+  background: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  background: #6070ff;
+  background-image: url(/background/contact\ form\ shapes-mobile@2x.png);
+  background-size: 60%;
+  background-position: top 21px right -20px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 80px;
+  padding-top: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.flex h2 {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+}
+
+.flex p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+.flex form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.flex form li>input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  border-style: none;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.flex form li>textarea {
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  border-style: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding-top: 15px;
+  min-height: 140px;
+}
+
+.get-touch {
+  display: flex;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background: #fff;
+  min-width: 140px;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
 }
