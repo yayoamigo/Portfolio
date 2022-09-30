@@ -13,9 +13,6 @@ body {
   background-image: url(background.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #fff;
-  border-bottom-left-radius: 80px;
-  padding-bottom: 40px;
   background-position: top 80px right 0;
 }
 
@@ -564,7 +561,6 @@ a:link { text-decoration: none; }
   border-bottom-left-radius: 80px;
   background-image: url(/background/desktopbg.png);
   background-repeat: no-repeat;
-  background-color: #fff;
   background-size: 95%;
   background-position: top 100px right 10px;
 }
@@ -642,7 +638,7 @@ a:link { text-decoration: none; }
 }
 
 #title3 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -652,7 +648,7 @@ a:link { text-decoration: none; }
 }
 
 #paragraph {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -741,10 +737,6 @@ a:link { text-decoration: none; }
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.mobile-img {
-  display: none;
 }
 
 .photo img{
