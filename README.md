@@ -7,11 +7,12 @@ In this proyect I will be creating the frist and middle part  for the mobile ver
 # Get Started
 
 
-```bash
 
- [Porfolio](https://yayoamigo.github.io/mobile-template/)
 
-```
+ -[Portfolio](https://yayoamigo.github.io/mobile-template)
+
+
+
 
 ## Authors
 
