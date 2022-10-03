@@ -446,7 +446,7 @@ a:link { text-decoration: none; }
   display: flex;
   flex-direction: column;
   background: #6070ff;
-  background-image: url(/background/contact\ form\ shapes-mobile@2x.png);
+  background-image: url(contact\ form\ shapes-mobile@2x.png);
   background-size: 60%;
   background-position: top 21px right -20px;
   justify-content: center;
@@ -573,7 +573,7 @@ a:link { text-decoration: none; }
     height: 95vh;
     background-color: #fff;
     border-bottom-left-radius: 80px;
-    background-image: url(/background/desktopbg.png);
+    background-image: url(desktopbg.png);
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: top 100px right 10px;
@@ -906,7 +906,7 @@ a:link { text-decoration: none; }
     background: #6070ff;
     align-items: center;
     padding-bottom: 10%;
-    background-image: url(/background/last-bc.png);
+    background-image: url(last-bc.png);
     background-size: 90%;
     background-position: top 60px right 50px;
     justify-content: center;
