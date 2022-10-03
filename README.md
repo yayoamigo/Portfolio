@@ -6,14 +6,13 @@ In this proyect I will be creating the frist and middle part  for the mobile ver
 - CSS
 # Get Started
 
-To get a local copy up and running follow these simple steps.
 
-```bash
 
-$ https://github.com/yayoamigo/mobile-template
-$ cd mobile-template
 
-```
+ -[Portfolio](https://yayoamigo.github.io/mobile-template)
+
+
+
 
 ## Authors
 
