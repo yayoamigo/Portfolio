@@ -523,6 +523,14 @@ a:link { text-decoration: none; }
   min-height: 140px;
 }
 
+.flex form li > textarea:focus {
+  background: #7a869a;
+}
+
+.flex form li > input:focus {
+  background: #7a869a;
+}
+
 .get-touch {
   display: flex;
   padding: 10px;
@@ -546,6 +554,10 @@ a:link { text-decoration: none; }
 
 .get-touch:hover {
   cursor: pointer;
+}
+
+label {
+  display: none;
 }
 
 @media all and (max-width: 767px) {
