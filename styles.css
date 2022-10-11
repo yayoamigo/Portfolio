@@ -8,7 +8,52 @@ body {
   background: #e5e5e5;
 }
 
-.Container {
+#Purple {
+  background-color: hsla(234, 100%, 69%, 80%);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  padding-left: 4%;
+  padding-right: 30%;
+}
+
+.x-btn {
+  margin-top: 9%;
+  width: 30px;
+  align-self: flex-end;
+  margin-bottom: 5%;
+  margin-right: 9%;
+}
+
+#close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 20%;
+}
+
+.pop-window {
+  margin-top: 6%;
+  margin-left: 2%;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pop-window:hover {
+  color: #172b4d;
+}
+
+.Container1 {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -579,7 +624,7 @@ label {
 
   a:link { text-decoration: none; }
 
-  .Container {
+  .Container1 {
     display: flex;
     flex-direction: column;
     height: 95vh;

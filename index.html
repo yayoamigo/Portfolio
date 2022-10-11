@@ -14,58 +14,69 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-  <div class="Container">
-    <header class="Mylogo">
-      <div class="left-logo"> 
-        <a class="logotitle" href="#homepage">
-        <span class="logo">My Logo</span>
-        </a>
-      </div>
-      <nav class="right-logo">
-        <a class="hidden" href="#homepage">Portfolio</a>
-        <a class="hidden" href="#homepage">About</a>
-        <a class="hidden" href="#homepage">Contact</a>
-        <button class="Hambu-button">
-        <a><img src="Union.png"></a>
-        </button>
+  <div id="Purple"> 
+    <div class="x-btn"> 
+      <button type="btn-close" id="close" >
+        <img src="/images/Normal Button/Tertiary/Icons/Normal Button/Tertiary/Icons/close.png" alt="x">
+      </button>
+    </div>
+    <a class="pop-window" href="#Portfolio">Portfolio</a>
+    <a class="pop-window" href="#about">About</a>
+    <a class="pop-window" href="#footer"> Conctact</a>   
+  </div>
+    <div class="Container1">
+      <header class="Mylogo">
+        <div class="left-logo"> 
+          <a class="logotitle" href="#homepage">
+          <span class="logo">My Logo</span>
+          </a>
+        </div>
+        <nav class="right-logo">
+          <a class="hidden" href="#homepage">Portfolio</a>
+          <a class="hidden" href="#homepage">About</a>
+          <a class="hidden" href="#homepage">Contact</a>
+          <button class="Hambu-button" id="hamb-btn">
+          <a><img src="Union.png"></a>
+          </button>
+        </nav>
+      </header>
+    <div class="img">
+      <section class="bio">
+        <header class="bio1">
+          <h1 id="title">I’m David Glad to see you!</h1>
+          <h1 id="title3">I’m David<br>Glad to see you!</h1>
+          <p id="paragraph">I’m a software developer! I can help you build a product , 
+        feature or website Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.</p>
+          <h3 id="connect">LET’S CONNECT</h3>
+      </header>
+      </section>
+      <nav class="bottom-icons">
+        <ul>
+          <li>
+            <a href="#"><img src="twitter.png" alt="twitter"></a>
+          </li>
+          <li>
+            <a href="#"><img src="Linkedin icon.png" alt="linkedin"></a>
+          </li>
+          <li>
+            <a href="#"><img src="m.png" alt="medium"></a>
+          </li>
+          <li>
+            <a href="#"><img src="github.png" alt="github"></a>
+          </li>
+          <li>
+            <a href="#"><img src="hand.png" alt="union"></a>
+          </li>
+        </ul>
       </nav>
-    </header>
-  <div class="img">
-    <section class="bio">
-      <header class="bio1">
-        <h1 id="title">I’m Mariane Glad to see you!</h1>
-        <h1 id="title3">I’m Alexandra<br>Glad to see you!</h1>
-        <p id="paragraph">I’m a software developer! I can help you build a product , 
-      feature or website Look through some of my work and experience! 
-      If you like what you see and have a project you need coded, 
-      don’t hestiate to contact me.</p>
-        <h3 id="connect">LET’S CONNECT</h3>
-    </header>
-    </section>
-    <nav class="bottom-icons">
-      <ul>
-        <li>
-          <a href="#"><img src="twitter.png" alt="twitter"></a>
-        </li>
-        <li>
-          <a href="#"><img src="Linkedin icon.png" alt="linkedin"></a>
-        </li>
-        <li>
-          <a href="#"><img src="m.png" alt="medium"></a>
-        </li>
-        <li>
-          <a href="#"><img src="github.png" alt="github"></a>
-        </li>
-        <li>
-          <a href="#"><img src="hand.png" alt="union"></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  </div>
-  <section class="cards">
+    </div>
+    </div>
+  <section class="cards" id="Portfolio">
     <div class="project1">
       <div class="desktop-cards-img">
         <header class="photo">
@@ -377,7 +388,7 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="desktop-about1">
       <div class="abou-last">
         <section class="bio2">
@@ -445,7 +456,7 @@
       </div>
     </div>
   </section>
-  <section id="footer">
+  <section id="footer" >
     <footer class="flex">
       <h2>Contact me</h2>
       <p>If you have an application you are interested in developing, a feature that you need built or a 
@@ -473,5 +484,7 @@
     <img class="last-img"src="Light.png">
     </footer>
   </section>
+<script src="/Dom-mainpulation.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
