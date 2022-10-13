@@ -497,3 +497,9 @@ function addModal4() {
 
 document.getElementById('see-project4').addEventListener('click', addModal4);
 document.getElementById('see-project-d4').addEventListener('click', addModal4);
+
+//Form validation 
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email= document.getElementById('email');
+const textarea = document.getElementById('textarea');
