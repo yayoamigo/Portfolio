@@ -21,20 +21,47 @@ for (let i = 0; i < anchorElm.length; i += 1) {
 // Second window
 const bodyDiv = document.querySelector('.pop-body');
 
+// Project data
+const ProjectData = [
+  {
+    name: 'tonic',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: '/tonicphoto.png',
+    imageD: '/desktopjs.png',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    linklive: 'https://yayoamigo.github.io/mobile-template/',
+    linksource: 'https://github.com/yayoamigo/mobile-template',
+  },
+  {
+    name: 'Multi-Post Stories',
+    image: '/multiphoto.png',
+    imageD: '/2desktop.png',
+  },
+  {
+    name: 'Facebook 360',
+    image: '/yogaphoto.png',
+    imageD: '/3desktop.png',
+  },
+  {
+    name: 'Uber Navigation',
+    image: '/lastphoto.png',
+    imageD: '/4desktop.png',
+  },
+];
+
 // First card
 function addModal1() {
   const Popdiv = document.createElement('div');
   Popdiv.classList.add('active');
   bodyDiv.appendChild(Popdiv);
-  const arr = {
-    name: 'tonic', description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea", image: '/tonicphoto.png', imageD: '/desktopjs.png', technologies: ['html', 'css', 'javascript'], technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], linklive: 'https://yayoamigo.github.io/mobile-template/', linksource: 'https://github.com/yayoamigo/mobile-template',
-  };
   Popdiv.classList.add('pop-up');
   Popdiv.classList.replace('not-active', 'active');
   const divContent = `  <div class="pop-up-inside">
   <div class="regular-flex">
     <div class="tonic-title2">
-      <h2>${arr.name}</h2>
+      <h2>${ProjectData[0].name}</h2>
       <a class="Modalb">
       <img src="/blackclose.png" alt="x">
     </a>
@@ -47,34 +74,34 @@ function addModal1() {
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
-      <img class="mobile-img" src="/yogaphoto.png" alt="multi-post-stories">
-      <img class="desktop-img2" src="1desktop.png" alt="tonic">
+      <img class="mobile-img" src="${ProjectData[0].image}" alt="multi-post-stories">
+      <img class="desktop-img2" src="${ProjectData[0].imageD}" alt="tonic">
     </header>
   </div>
   <div class="pop-bottom-M"> 
       <div class="project-p2">
         <p class="mobile-p">
-        ${arr.description}
+        ${ProjectData[0].description}
         </p>
       </div>
       <div class="skills2-mobile">
         <ul>
           <li>
-          ${arr.technologies[0]}
+          ${ProjectData[0].technologies[0]}
           </li>
           <li>
-          ${arr.technologies[1]}
+          ${ProjectData[0].technologies[1]}
           </li>
           <li>
-          ${arr.technologies[2]}
+          ${ProjectData[0].technologies[2]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -82,39 +109,39 @@ function addModal1() {
   <div class="pop-bottom-D"> 
     <div class="project-p2">
       <p class="mobile-p">
-      ${arr.descriptionD}
+      ${ProjectData[0].descriptionD}
       </p>
     </div>
     <div id="D-bottom-btn"> 
       <div class="skills2-desktop">
         <ul>
           <li>
-          ${arr.technologiesD[0]}
+          ${ProjectData[0].technologiesD[0]}
           </li>
           <li>
-          ${arr.technologiesD[1]}
+          ${ProjectData[0].technologiesD[1]}
           </li>
           <li>
-          ${arr.technologiesD[2]}
+          ${ProjectData[0].technologiesD[2]}
           </li>
         </ul>
         <ul>
           <li>
-          ${arr.technologiesD[3]}
+          ${ProjectData[0].technologiesD[3]}
           </li>
           <li>
-          ${arr.technologiesD[4]}
+          ${ProjectData[0].technologiesD[4]}
           </li>
           <li>
-          ${arr.technologiesD[5]}
+          ${ProjectData[0].technologiesD[5]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -140,15 +167,12 @@ function addModal2() {
   const Popdiv = document.createElement('div');
   Popdiv.classList.add('active');
   bodyDiv.appendChild(Popdiv);
-  const arr = {
-    name: 'Multi-Post Stories', description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea", image: '/multiphoto.png', imageD: '/2desktop.png', technologies: ['html', 'css', 'javascript'], technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], linklive: 'https://yayoamigo.github.io/mobile-template/', linksource: 'https://github.com/yayoamigo/mobile-template',
-  };
   Popdiv.classList.add('pop-up');
   Popdiv.classList.replace('not-active', 'active');
   const divContent = `  <div class="pop-up-inside">
   <div class="regular-flex">
     <div class="tonic-title2">
-      <h2>${arr.name}</h2>
+      <h2>${ProjectData[1].name}</h2>
       <a class="Modalb">
       <img src="/blackclose.png" alt="x">
     </a>
@@ -161,34 +185,34 @@ function addModal2() {
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
-      <img class="mobile-img" src="${arr.image}" alt="multi-post-stories">
-      <img class="desktop-img2" src="${arr.imageD}" alt="tonic">
+      <img class="mobile-img" src="${ProjectData[1].image}" alt="multi-post-stories">
+      <img class="desktop-img2" src="${ProjectData[1].imageD}" alt="tonic">
     </header>
   </div>
   <div class="pop-bottom-M"> 
       <div class="project-p2">
         <p class="mobile-p">
-        ${arr.description}
+        ${ProjectData[0].description}
         </p>
       </div>
       <div class="skills2-mobile">
         <ul>
           <li>
-          ${arr.technologies[0]}
+          ${ProjectData[0].technologies[0]}
           </li>
           <li>
-          ${arr.technologies[1]}
+          ${ProjectData[0].technologies[1]}
           </li>
           <li>
-          ${arr.technologies[2]}
+          ${ProjectData[0].technologies[2]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -196,39 +220,39 @@ function addModal2() {
   <div class="pop-bottom-D"> 
     <div class="project-p2">
       <p class="mobile-p">
-      ${arr.descriptionD}
+      ${ProjectData[0].descriptionD}
       </p>
     </div>
     <div id="D-bottom-btn"> 
       <div class="skills2-desktop">
         <ul>
           <li>
-          ${arr.technologiesD[0]}
+          ${ProjectData[0].technologiesD[0]}
           </li>
           <li>
-          ${arr.technologiesD[1]}
+          ${ProjectData[0].technologiesD[1]}
           </li>
           <li>
-          ${arr.technologiesD[2]}
+          ${ProjectData[0].technologiesD[2]}
           </li>
         </ul>
         <ul>
           <li>
-          ${arr.technologiesD[3]}
+          ${ProjectData[0].technologiesD[3]}
           </li>
           <li>
-          ${arr.technologiesD[4]}
+          ${ProjectData[0].technologiesD[4]}
           </li>
           <li>
-          ${arr.technologiesD[5]}
+          ${ProjectData[0].technologiesD[5]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -255,15 +279,12 @@ function addModal3() {
   const Popdiv = document.createElement('div');
   Popdiv.classList.add('active');
   bodyDiv.appendChild(Popdiv);
-  const arr = {
-    name: 'Facebook 360', description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea", image: '/yogaphoto.png', imageD: '/3desktop.png', technologies: ['html', 'css', 'javascript'], technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], linklive: 'https://yayoamigo.github.io/mobile-template/', linksource: 'https://github.com/yayoamigo/mobile-template',
-  };
   Popdiv.classList.add('pop-up');
   Popdiv.classList.replace('not-active', 'active');
   const divContent = `  <div class="pop-up-inside">
   <div class="regular-flex">
     <div class="tonic-title2">
-      <h2>${arr.name}</h2>
+      <h2>${ProjectData[2].name}</h2>
       <a class="Modalb">
       <img src="/blackclose.png" alt="x">
     </a>
@@ -276,34 +297,34 @@ function addModal3() {
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
-      <img class="mobile-img" src="${arr.image}" alt="multi-post-stories">
-      <img class="desktop-img2" src="${arr.imageD}" alt="tonic">
+      <img class="mobile-img" src="${ProjectData[2].image}" alt="multi-post-stories">
+      <img class="desktop-img2" src="${ProjectData[2].imageD}" alt="tonic">
     </header>
   </div>
   <div class="pop-bottom-M"> 
       <div class="project-p2">
         <p class="mobile-p">
-        ${arr.description}
+        ${ProjectData[0].description}
         </p>
       </div>
       <div class="skills2-mobile">
         <ul>
           <li>
-          ${arr.technologies[0]}
+          ${ProjectData[0].technologies[0]}
           </li>
           <li>
-          ${arr.technologies[1]}
+          ${ProjectData[0].technologies[1]}
           </li>
           <li>
-          ${arr.technologies[2]}
+          ${ProjectData[0].technologies[2]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -311,39 +332,39 @@ function addModal3() {
   <div class="pop-bottom-D"> 
     <div class="project-p2">
       <p class="mobile-p">
-      ${arr.descriptionD}
+      ${ProjectData[0].descriptionD}
       </p>
     </div>
     <div id="D-bottom-btn"> 
       <div class="skills2-desktop">
         <ul>
           <li>
-          ${arr.technologiesD[0]}
+          ${ProjectData[0].technologiesD[0]}
           </li>
           <li>
-          ${arr.technologiesD[1]}
+          ${ProjectData[0].technologiesD[1]}
           </li>
           <li>
-          ${arr.technologiesD[2]}
+          ${ProjectData[0].technologiesD[2]}
           </li>
         </ul>
         <ul>
           <li>
-          ${arr.technologiesD[3]}
+          ${ProjectData[0].technologiesD[3]}
           </li>
           <li>
-          ${arr.technologiesD[4]}
+          ${ProjectData[0].technologiesD[4]}
           </li>
           <li>
-          ${arr.technologiesD[5]}
+          ${ProjectData[0].technologiesD[5]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -370,55 +391,52 @@ function addModal4() {
   const Popdiv = document.createElement('div');
   Popdiv.classList.add('active');
   bodyDiv.appendChild(Popdiv);
-  const arr = {
-    name: 'Uber Navigation', description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea", image: '/lastphoto.png', imageD: '/4desktop.png', technologies: ['html', 'css', 'javascript'], technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], linklive: 'https://yayoamigo.github.io/mobile-template/', linksource: 'https://github.com/yayoamigo/mobile-template',
-  };
   Popdiv.classList.add('pop-up');
   Popdiv.classList.replace('not-active', 'active');
   const divContent = `  <div class="pop-up-inside">
   <div class="regular-flex">
     <div class="tonic-title2">
-      <h2>${arr.name}</h2>
+      <h2>${ProjectData[3].name}</h2>
       <a class="Modalb">
       <img src="/blackclose.png" alt="x">
     </a>
     </div>
     <div class="tonic-info2">
-      <div class="tonic-span"><span>Uber</span></div>
+      <div class="tonic-span"><span>FACEBOOK</span></div>
       <div class="dot"><img src="doticon.png"></div>
-      <div class="tonic-p"><p>Lead Developer</p></div>
+      <div class="tonic-p"><p>Full Stack Dev</p></div>
       <div class="dot"><img src="doticon.png"></div>
-      <div class="tonic-p"><p>2018</p></div>
+      <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
-      <img class="mobile-img" src="${arr.image}" alt="multi-post-stories">
-      <img class="desktop-img2" src="${arr.imageD}" alt="tonic">
+      <img class="mobile-img" src="${ProjectData[3].image}" alt="multi-post-stories">
+      <img class="desktop-img2" src="${ProjectData[3].imageD}" alt="tonic">
     </header>
   </div>
   <div class="pop-bottom-M"> 
       <div class="project-p2">
         <p class="mobile-p">
-        ${arr.description}
+        ${ProjectData[0].description}
         </p>
       </div>
       <div class="skills2-mobile">
         <ul>
           <li>
-          ${arr.technologies[0]}
+          ${ProjectData[0].technologies[0]}
           </li>
           <li>
-          ${arr.technologies[1]}
+          ${ProjectData[0].technologies[1]}
           </li>
           <li>
-          ${arr.technologies[2]}
+          ${ProjectData[0].technologies[2]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
@@ -426,39 +444,39 @@ function addModal4() {
   <div class="pop-bottom-D"> 
     <div class="project-p2">
       <p class="mobile-p">
-      ${arr.descriptionD}
+      ${ProjectData[0].descriptionD}
       </p>
     </div>
     <div id="D-bottom-btn"> 
       <div class="skills2-desktop">
         <ul>
           <li>
-          ${arr.technologiesD[0]}
+          ${ProjectData[0].technologiesD[0]}
           </li>
           <li>
-          ${arr.technologiesD[1]}
+          ${ProjectData[0].technologiesD[1]}
           </li>
           <li>
-          ${arr.technologiesD[2]}
+          ${ProjectData[0].technologiesD[2]}
           </li>
         </ul>
         <ul>
           <li>
-          ${arr.technologiesD[3]}
+          ${ProjectData[0].technologiesD[3]}
           </li>
           <li>
-          ${arr.technologiesD[4]}
+          ${ProjectData[0].technologiesD[4]}
           </li>
           <li>
-          ${arr.technologiesD[5]}
+          ${ProjectData[0].technologiesD[5]}
           </li>
         </ul>
       </div>
       <nav class="see2">
-        <a href="${arr.linklive}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
         See live <span> <img src="/seelive.png" alt="live"> </span> 
         </a>
-        <a href="${arr.linksource}" target="_blank" class="regular-flex2">
+        <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
           See source <span> <img src="/littlegit.png" alt="git"> </span> 
           </a>
       </nav>
