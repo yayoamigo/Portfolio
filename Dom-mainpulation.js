@@ -500,6 +500,23 @@ document.getElementById('see-project-d4').addEventListener('click', addModal4);
 
 //Form validation 
 const form = document.getElementById('form');
-const name = document.getElementById('name');
+const User = document.getElementById('name');
 const email= document.getElementById('email');
 const textarea = document.getElementById('textarea');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  validateImputs();
+})
+
+function validateImputs() {
+  const nameValue = User.value.trim(); 
+  const emailValue = email.value.trim(); 
+  const textValue = textarea.value.trim();  
+
+  if(nameValue === '' ){
+    setErrorFor(User, 'Username cannot be blank')
+  } else if ()
+
+}
