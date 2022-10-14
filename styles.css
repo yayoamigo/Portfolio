@@ -763,6 +763,18 @@ a:link { text-decoration: none; }
   width: 100%;
 }
 
+.form-control.success textarea {
+  border-color: #2ecc71;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+  border-width: 3px;
+  border-style: solid;
+}
+
 .flex form li > textarea:focus {
   background: #7a869a;
 }
@@ -786,18 +798,6 @@ a:link { text-decoration: none; }
 }
 
 .form-control.error input {
-  border-color: #e74c3c;
-  border-width: 3px;
-  border-style: solid;
-}
-
-.form-control.success textarea {
-  border-color: #2ecc71;
-  border-width: 3px;
-  border-style: solid;
-}
-
-.form-control.error textarea {
   border-color: #e74c3c;
   border-width: 3px;
   border-style: solid;
