@@ -28,7 +28,7 @@ const ProjectData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     descriptionD: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: '/tonicphoto.png',
-    imageD: '/desktopjs.png',
+    imageD: '/1desktop.png',
     technologies: ['html', 'css', 'javascript'],
     technologiesD: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     linklive: 'https://yayoamigo.github.io/mobile-template/',
@@ -497,3 +497,76 @@ function addModal4() {
 
 document.getElementById('see-project4').addEventListener('click', addModal4);
 document.getElementById('see-project-d4').addEventListener('click', addModal4);
+
+// Form validation
+const form = document.getElementById('form');
+const User = document.getElementById('name');
+const email = document.getElementById('email');
+const textarea = document.getElementById('textarea');
+const errorBtn = document.querySelector('.error-div-btn');
+const FormError = document.querySelector('.form-control-btn');
+
+function setErrorForBtn(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+  formControl.className = 'form-control-btn error';
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+  formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
+
+function validateImputs() {
+  const nameValue = User.value.trim();
+  const emailValue = email.value.trim();
+  const textValue = textarea.value.trim();
+
+  if (nameValue === '') {
+    setErrorFor(User, 'Name cannot be blank');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if (nameValue.length >= 30) {
+    setErrorFor(User, 'Name must be less than 30 characters long');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(User);
+    setSuccessFor(errorBtn);
+  }
+
+  if (emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if ((emailValue === String(emailValue).toLowerCase()) === false) {
+    setErrorFor(email, 'Email must be in lowercase');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(email);
+    setSuccessFor(errorBtn);
+  }
+
+  if (textValue === '') {
+    setErrorFor(textarea, 'Message cannot be empty');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if (textValue.length >= 500) {
+    setErrorFor(textarea, 'Message must be under 500 characters long');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(textarea);
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  validateImputs();
+
+  if (FormError.className === 'form-control-btn error') {
+    e.preventDefault();
+  }
+});

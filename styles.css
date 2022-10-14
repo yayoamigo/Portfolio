@@ -759,12 +759,97 @@ a:link { text-decoration: none; }
   min-height: 140px;
 }
 
+.error-div small {
+  width: 100%;
+}
+
+.form-control.success textarea {
+  border-color: #2ecc71;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+  border-width: 3px;
+  border-style: solid;
+}
+
 .flex form li > textarea:focus {
   background: #7a869a;
 }
 
+.form-control {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.form-control-btn {
+  display: flex;
+  justify-content: start;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control-btn.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control-btn.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 .flex form li > input:focus {
   background: #7a869a;
+}
+
+.error-div-btn {
+  visibility: hidden;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%;
+  gap: 5px;
+}
+
+.error-div {
+  visibility: hidden;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%;
+  gap: 5px;
 }
 
 .get-touch {
@@ -1510,5 +1595,79 @@ label {
 
   .skills2-mobile {
     display: none;
+  }
+
+  .form-control-btn {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+
+  .error-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 5px;
+    width: 120%;
+  }
+
+  .error-div small {
+    width: 110%;
+  }
+
+  .error-div-btn {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5px;
+    width: 80%;
+    gap: 5px;
+  }
+
+  .circle {
+    width: 5%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .error-div-btn {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5px;
+    width: 70%;
+    gap: 5px;
+  }
+
+  .form-control-btn {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1350px) {
+  .error-div-btn {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5px;
+    width: 70%;
+    gap: 5px;
+  }
+}
+
+@media all and (min-width: 1590px) {
+  .error-div-btn {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5px;
+    width: 70%;
+    gap: 5px;
   }
 }
