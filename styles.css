@@ -791,6 +791,18 @@ a:link { text-decoration: none; }
   border-style: solid;
 }
 
+.form-control.success textarea {
+  border-color: #2ecc71;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+  border-width: 3px;
+  border-style: solid;
+}
+
 .form-control.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
@@ -1643,7 +1655,7 @@ label {
     justify-content: center;
     padding: 0;
     margin-top: 5px;
-    width: 60%;
+    width: 70%;
     gap: 5px;
   }
 }
@@ -1655,7 +1667,7 @@ label {
     justify-content: center;
     padding: 0;
     margin-top: 5px;
-    width: 50%;
+    width: 70%;
     gap: 5px;
   }
 }
