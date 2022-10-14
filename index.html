@@ -468,30 +468,30 @@
       </p>
       <form action="https://formspree.io/f/xbjbondj" method="post" id="form">
         <ul>
-          <li class="form-control success">
+          <li class="form-control">
               <label for="name">Name</label>
-              <input type="text" name="name" placeholder="Name*" required maxlength="30" id="name">
+              <input type="text" name="name" placeholder="Name*" id="name">
               <div class="error-div">
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
                 <i class="fas fa-check-circle check"></i>
               </div>
           </li>
-          <li class="form-control error">
+          <li class="form-control">
             <label for="email">email</label>
             <input type="email" name="email" placeholder="Email*" id="email">
             <div class="error-div">
               <i class="fas fa-exclamation-circle"></i>
-              <small>Error message</small>
+              <small></small>
               <i class="fas fa-check-circle check"></i>
             </div>
           </li>
           <li class="form-control">
             <label for="textarea">textarea</label>
-            <textarea name="textarea" placeholder="Write your message here*" required maxlength="500" id="textarea"></textarea>
+            <textarea name="textarea" placeholder="Write your message here*" id="textarea"></textarea>
             <div class="error-div">
               <i class="fas fa-exclamation-circle"></i>
-              <small>Error message</small>
+              <small></small>
               <i class="fas fa-check-circle check" ></i>
             </div>
           </li >
@@ -499,10 +499,10 @@
           <button class="get-touch" type="submit" id="submit-btn">
             Get In Touch
           </button>
-          <div class="form-control-btn error">
+          <div class="form-control-btn" id="ErrorBtn">
             <div class="error-div-btn">
               <i class="fas fa-exclamation-circle circle"></i>
-              <small>Error message</small>
+              <small id="M-btn"></small>
             </div>
           </div>
       </form>

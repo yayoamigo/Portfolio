@@ -498,25 +498,76 @@ function addModal4() {
 document.getElementById('see-project4').addEventListener('click', addModal4);
 document.getElementById('see-project-d4').addEventListener('click', addModal4);
 
-//Form validation 
+// Form validation
 const form = document.getElementById('form');
 const User = document.getElementById('name');
-const email= document.getElementById('email');
+const email = document.getElementById('email');
 const textarea = document.getElementById('textarea');
+const errorBtn = document.querySelector('.error-div-btn');
+const FormError = document.querySelector('.form-control-btn');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+function setErrorForBtn(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+  formControl.className = 'form-control-btn error';
+}
 
-  validateImputs();
-})
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+  formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
 
 function validateImputs() {
-  const nameValue = User.value.trim(); 
-  const emailValue = email.value.trim(); 
-  const textValue = textarea.value.trim();  
+  const nameValue = User.value.trim();
+  const emailValue = email.value.trim();
+  const textValue = textarea.value.trim();
 
-  if(nameValue === '' ){
-    setErrorFor(User, 'Username cannot be blank')
-  } else if ()
+  if (nameValue === '') {
+    setErrorFor(User, 'Name cannot be blank');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if (nameValue.length >= 30) {
+    setErrorFor(User, 'Name must be less than 30 characters long');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(User);
+    setSuccessFor(errorBtn);
+  }
 
+  if (emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if ((emailValue === String(emailValue).toLowerCase()) === false) {
+    setErrorFor(email, 'Email must be in lowercase');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(email);
+    setSuccessFor(errorBtn);
+  }
+
+  if (textValue === '') {
+    setErrorFor(textarea, 'Message cannot be empty');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else if (textValue.length >= 500) {
+    setErrorFor(textarea, 'Message must be under 500 characters long');
+    setErrorForBtn(errorBtn, 'All inputs must be valid');
+  } else {
+    setSuccessFor(textarea);
+    setSuccessFor(errorBtn);
+  }
 }
+
+form.addEventListener('submit', (e) => {
+  validateImputs();
+
+  if (FormError.className === 'form-control-btn error') {
+    e.preventDefault();
+  }
+});

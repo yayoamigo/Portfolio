@@ -759,6 +759,10 @@ a:link { text-decoration: none; }
   min-height: 140px;
 }
 
+.error-div small {
+  width: 100%;
+}
+
 .flex form li > textarea:focus {
   background: #7a869a;
 }
@@ -776,7 +780,7 @@ a:link { text-decoration: none; }
 }
 
 .form-control.success input {
-  border-color:  #2ecc71;
+  border-color: #2ecc71;
   border-width: 3px;
   border-style: solid;
 }
@@ -788,28 +792,28 @@ a:link { text-decoration: none; }
 }
 
 .form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
+  color: #2ecc71;
+  visibility: visible;
 }
 
 .form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+  color: #e74c3c;
+  visibility: visible;
 }
 
 .form-control-btn.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+  color: #e74c3c;
+  visibility: visible;
 }
 
 .form-control.error small {
   color: #e74c3c;
-	visibility: visible;
+  visibility: visible;
 }
 
 .form-control-btn.error small {
   color: #e74c3c;
-	visibility: visible;
+  visibility: visible;
 }
 
 .flex form li > input:focus {
@@ -826,7 +830,6 @@ a:link { text-decoration: none; }
   gap: 5px;
 }
 
-
 .error-div {
   visibility: hidden;
   display: flex;
@@ -836,11 +839,6 @@ a:link { text-decoration: none; }
   width: 100%;
   gap: 5px;
 }
-
-.error-div small {
-  width: 100%;
-}
-
 
 .get-touch {
   display: flex;
@@ -916,7 +914,6 @@ label {
     pointer-events: all;
   }
 }
-
 
 @media all and (min-width: 768px) {
   html,
@@ -1600,10 +1597,10 @@ label {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-top: 6px;
+    margin-top: 5px;
     width: 120%;
   }
-  
+
   .error-div small {
     width: 110%;
   }
@@ -1621,7 +1618,6 @@ label {
   .circle {
     width: 5%;
   }
-  
 }
 
 @media all and (min-width: 1200px) {
@@ -1639,7 +1635,6 @@ label {
     width: 80%;
   }
 }
-
 
 @media all and (min-width: 1350px) {
   .error-div-btn {
