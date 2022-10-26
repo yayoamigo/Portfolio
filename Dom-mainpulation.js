@@ -568,5 +568,22 @@ form.addEventListener('submit', (e) => {
 
   if (FormError.className === 'form-control-btn error') {
     e.preventDefault();
+  } else {
+    const data = {
+      name: User.value,
+      email: email.value,
+      textarea: textarea.value,
+    };
+    localStorage.setItem('data', JSON.stringify(data));
   }
 });
+const x = JSON.parse(localStorage.getItem('data'));
+if (localStorage.getItem('data')) {
+User.value = x.name;
+email.value = x.email;
+textarea.value = x.textarea;
+} else {
+  console.log('No data')
+};
+
+
