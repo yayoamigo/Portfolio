@@ -31,6 +31,14 @@ body {
   pointer-events: all;
 }
 
+.show-card {
+  display: block;
+}
+
+.hide-card {
+  display: none;
+}
+
 .x-btn {
   margin-top: 9%;
   width: 30px;

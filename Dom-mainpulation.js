@@ -578,7 +578,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 const x = JSON.parse(localStorage.getItem('data'));
-if (localStorage.getItem('data')) {
+if (x) {
 User.value = x.name;
 email.value = x.email;
 textarea.value = x.textarea;
