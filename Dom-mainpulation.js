@@ -63,14 +63,14 @@ function addModal1() {
     <div class="tonic-title2">
       <h2>${ProjectData[0].name}</h2>
       <a class="Modalb">
-      <img src="/blackclose.png" alt="x">
+      <img src="./blackclose.png" alt="x">
     </a>
     </div>
     <div class="tonic-info2">
       <div class="tonic-span"><span>CANOPY</span></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>Back End Dev</p></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
@@ -99,10 +99,10 @@ function addModal1() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
   </div>
@@ -139,10 +139,10 @@ function addModal1() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
     </div>
@@ -174,14 +174,14 @@ function addModal2() {
     <div class="tonic-title2">
       <h2>${ProjectData[1].name}</h2>
       <a class="Modalb">
-      <img src="/blackclose.png" alt="x">
+      <img src="./blackclose.png" alt="x">
     </a>
     </div>
     <div class="tonic-info2">
       <div class="tonic-span"><span>FACEBOOK</span></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>Full Stack Dev</p></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
@@ -210,10 +210,10 @@ function addModal2() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
   </div>
@@ -250,10 +250,10 @@ function addModal2() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
     </div>
@@ -286,14 +286,14 @@ function addModal3() {
     <div class="tonic-title2">
       <h2>${ProjectData[2].name}</h2>
       <a class="Modalb">
-      <img src="/blackclose.png" alt="x">
+      <img src="./blackclose.png" alt="x">
     </a>
     </div>
     <div class="tonic-info2">
       <div class="tonic-span"><span>FACEBOOK</span></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>Full Stack Dev</p></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
@@ -322,10 +322,10 @@ function addModal3() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
   </div>
@@ -362,10 +362,10 @@ function addModal3() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
     </div>
@@ -398,14 +398,14 @@ function addModal4() {
     <div class="tonic-title2">
       <h2>${ProjectData[3].name}</h2>
       <a class="Modalb">
-      <img src="/blackclose.png" alt="x">
+      <img src="./blackclose.png" alt="x">
     </a>
     </div>
     <div class="tonic-info2">
       <div class="tonic-span"><span>FACEBOOK</span></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>Full Stack Dev</p></div>
-      <div class="dot"><img src="doticon.png"></div>
+      <div class="dot"><img src="./doticon.png"></div>
       <div class="tonic-p"><p>2015</p></div>
     </div>
     <header class="photo-pop">
@@ -434,10 +434,10 @@ function addModal4() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
   </div>
@@ -474,10 +474,10 @@ function addModal4() {
       </div>
       <nav class="see2">
         <a href="${ProjectData[0].linklive}" target="_blank" class="regular-flex2">
-        See live <span> <img src="/seelive.png" alt="live"> </span> 
+        See live <span> <img src="./seelive.png" alt="live"> </span> 
         </a>
         <a href="${ProjectData[0].linksource}" target="_blank" class="regular-flex2">
-          See source <span> <img src="/littlegit.png" alt="git"> </span> 
+          See source <span> <img src="./littlegit.png" alt="git"> </span> 
           </a>
       </nav>
     </div>
