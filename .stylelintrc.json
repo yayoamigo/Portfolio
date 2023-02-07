@@ -30,6 +30,7 @@
     "csstree/validator": true
   },
   "ignoreFiles": [
+    "**/tailwind.css",
     "build/**",
     "dist/**",
     "**/reset*.css",
